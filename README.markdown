@@ -1,5 +1,15 @@
-[BloggingSpree](http://github.com/jaymendoza/spree-blogging-spree/)
+Fork Goals
 ---------------
+
+This fork only for own tunes and usage, for now. No plans to evolve original yet.
+
+Goal of this fork: cut WYSIWYG-editor in favor to using CKEditor extension (github.com/davidnorth/spree-ckeditor) which replaces any TextArea in admin pages by CKEditor. 
+
+
+Original project notes (BloggingSpree)
+---------------
+
+Forked from [BloggingSpree](http://github.com/jaymendoza/spree-blogging-spree/)
 
 Originally forked from [paulcc/spree-blog](http://github.com/paulcc/spree-blog/), this extension intends to offer a more complete blogging solution for use within the Spree E-Commerce application. It currently consists of a blog, news archive, and a news archive widget written in jQuery.
 
@@ -9,9 +19,9 @@ See the [issue tracker](http://github.com/jaymendoza/spree-blogging-spree/issues
 Installation
 ------------
 
-    script/extension install git://github.com/jaymendoza/spree-blogging-spree.git
-    sudo rake gems:install
-    rake db:migrate
+    $ script/extension install git://github.com/jaymendoza/spree-blogging-spree.git
+    $ sudo rake gems:install
+    $ rake db:migrate
 
 
 Compatibility
