@@ -1,0 +1,7 @@
+# Aptana project
+.loadpath
+.project
+.externalToolBuilders/*
+
+# Netbeans project
+nbproject/*
