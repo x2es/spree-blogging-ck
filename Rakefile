@@ -99,17 +99,17 @@ namespace :spec do
   end
 end
 
-desc 'Generate documentation for the blogging_spree extension.'
+desc 'Generate documentation for the blogging_ck extension.'
 Rake::RDocTask.new(:rdoc) do |rdoc|
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title    = 'BloggingSpreeExtension'
+  rdoc.title    = 'BloggingCkExtension'
   rdoc.options << '--line-numbers' << '--inline-source'
   rdoc.rdoc_files.include('README')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
 
 # For extensions that are in transition
-desc 'Test the blogging_spree extension.'
+desc 'Test the blogging_ck extension.'
 Rake::TestTask.new(:test) do |t|
   t.libs << 'lib'
   t.pattern = 'test/**/*_test.rb'
@@ -117,14 +117,14 @@ Rake::TestTask.new(:test) do |t|
 end
 
 namespace :test do
-  desc 'Functional test the blogging_spree extension.'
+  desc 'Functional test the blogging_ck extension.'
   Rake::TestTask.new(:functionals) do |t|
     t.libs << 'lib'
     t.pattern = 'test/functional/*_test.rb'
     t.verbose = true
   end
 
-  desc 'Unit test the blogging_spree extension.'
+  desc 'Unit test the blogging_ck extension.'
   Rake::TestTask.new(:units) do |t|
     t.libs << 'lib'
     t.pattern = 'test/unit/*_test.rb'
